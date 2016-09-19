@@ -20,7 +20,9 @@
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
     "font-awesome": "^4.6.3",
+    "highlight.js": "^9.6.0",
     "purecss": "^0.6.0",
+    "raleway-webfont": "^3.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2"

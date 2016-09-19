@@ -1,6 +1,7 @@
 require('purecss/build/pure.css')
 
 require('font-awesome/css/font-awesome.css')
+require('raleway-webfont/raleway.css')
 
 require('./css/blackburn.css')
 require('./css/side-menu.css')
