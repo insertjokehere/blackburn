@@ -1,5 +1,9 @@
-.header {
-  font-family: "Raleway", Helvetica, Arial, sans-serif
+.header, h1, h2, h3, h4 {
+  font-family: "TypoPRO Raleway", serif
+}
+
+html {
+  font-family: "TypoPRO Open Sans", Helvetica, Arial, sans-serif
 }
 
 a {
