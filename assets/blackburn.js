@@ -8,5 +8,3 @@ require('./css/blackburn.css')
 require('./css/side-menu.css')
 require('./css/grids-responsive.css')
 require('./js/ui.js')
-
-require('./css/site.css')
