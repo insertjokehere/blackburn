@@ -1,5 +1,14 @@
 var webpack = require('webpack');
 
+if (process.env.NODE_ENV === "production") {
+    var plugins = [
+        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.DedupePlugin()
+    ]
+} else {
+    var plugins = []
+}
+
 module.exports = {
     context: __dirname,
     entry: "./assets/blackburn.js",
@@ -15,8 +24,5 @@ module.exports = {
 	    { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?name=fonts/[hash].[ext]" }
         ]
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
-        new webpack.optimize.DedupePlugin()
-    ]
+    plugins: plugins
 };
