@@ -7,4 +7,6 @@ require('@typopro/web-open-sans/TypoPRO-OpenSans.css')
 require('./css/blackburn.css')
 require('./css/side-menu.css')
 require('./css/grids-responsive.css')
-require('./js/ui.js')
+
+var ui = require('./js/ui.js')
+document.addEventListener('DOMContentLoaded', ui, false);
