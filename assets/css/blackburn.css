@@ -1,3 +1,11 @@
+article.draft header h2::before {
+    content: "[DRAFT]  "
+}
+
+div.draft, tr.draft {
+    background: #ffc0c0
+}
+
 @font-face {
     font-family: 'Iosevka';
     src: url('../fonts/iosevka-term-regular.ttf') format('truetype');

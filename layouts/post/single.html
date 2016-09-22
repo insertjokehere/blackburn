@@ -1,14 +1,16 @@
 {{ partial "header.html" . }}
 
-<div class="header">
+<div class="header{{ if .Draft }} draft{{ end }}">
   <h1>{{ .Title }}</h1>
   <h2>{{ .Description }}</h2>
 </div>
 <div class="content">
-
+    
   {{ partial "post_meta.html" . }}
 
-  {{ .Content }}
+  <div class="body-content">
+      {{ .Content }}
+  </div>
 
   {{ partial "prev_next_post.html" . }}
 

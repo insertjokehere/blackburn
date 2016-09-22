@@ -1,4 +1,4 @@
-<article>
+<article {{ if .Draft }}class="draft"{{ end }}>
   <header>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 
