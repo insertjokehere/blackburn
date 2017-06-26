@@ -21,7 +21,8 @@ module.exports = {
         loaders: [
             { test: /\.css$/, loader: "style!css" },
 	    { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?name=fonts/[hash].[ext]&limit=10000&minetype=application/font-woff" },
-	    { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?name=fonts/[hash].[ext]" }
+	    { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?name=fonts/[hash].[ext]" },
+	    { test: /\.(png|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?name=[hash].[ext]" }
         ]
     },
     plugins: plugins
