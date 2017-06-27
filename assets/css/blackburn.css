@@ -109,3 +109,11 @@ i {
 .pagination a {
   color: #265778;
 }
+
+.contents h5 {
+    margin-bottom: 0;
+}
+
+.contents ol {
+    margin-top: 0;
+}
